@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Задание 6</title>
+</head>
+<body>
+<h1>Калькулятор стоимости заказа</h1>
+<form>
+    <p>Введите количество единиц товара</p>
+    <input type="text" id="number">
+    <p>Введите стоимость единицы товара</p>
+    <input type="text" id="cost">
+</form>
+<br>
+<button onclick="calculator();">Получить результат</button>
+<br>
+<div id="result1"></div>
+
+<h1>Динамический рассчёт стоимости товара</h1>
+<form>
+    <p>Количество единиц товара:</p>
+    <input value="1" id="quantity" type="text">
+    <h2>Тип товара:</h2>
+    <select name="sel" id="select">
+        <option value="1">Первый товар</option>
+        <option value="2">Второй товар</option>
+        <option value="3">Третий товар</option>
+    </select>
+    <div id="radios">
+        <input type="radio" name="radio" id="hid-radio">
+        <input type="radio" name="radio" value="first"> Первая кнопка
+        <input type="radio" name="radio" value="second"> Вторая кнопка
+        <input type="radio" name="radio" value="third"> Третья кнопка
+    </div>
+    <div id="checkboxes">
+        <input type="checkbox" name="first" id="first"> Первая кнопка
+        <input type="checkbox" name="second" id="second"> Вторая кнопка
+    </div>
+    <br>
+</form>
+<div id="result"></div>
+<script src="main.js"></script>
+</body>
+</html>
